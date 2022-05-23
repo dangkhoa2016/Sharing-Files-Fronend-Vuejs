@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-vue@2.22.0/dist/bootstrap-vue.css");
+@import url("https://assets-cdn.glitch.me/assets/plugins/global/plugins.bundle.css");
+@import url("https://assets-cdn.glitch.me/assets/css/style.bundle.css");
+.modal-body, body { background-color: #eff2f5 }
+.frame-loading { background: url('/assets/loader.gif') no-repeat center; }
+.toast { display: block !important; transition: opacity .15s linear !important; }
+.bg-light-info {
+  background-color: #e0d5f9!important;
+}
+.CodeMirror { height: 100%; }
+.breadcrumb .breadcrumb-item:after {
+  content: ">";
+  padding-left: 0.5rem;
+}
+div::-webkit-scrollbar-thumb,main::-webkit-scrollbar-thumb,ol::-webkit-scrollbar-thumb,
+pre::-webkit-scrollbar-thumb,span::-webkit-scrollbar-thumb,ul::-webkit-scrollbar-thumb {
+  background-color: #b5b8b7;
+}
+
+div:hover,main:hover,ol:hover,pre:hover,span:hover,ul:hover {
+  scrollbar-color: #b5b8b1 transparent
+}
+
+div:hover::-webkit-scrollbar-thumb,main:hover::-webkit-scrollbar-thumb,
+ol:hover::-webkit-scrollbar-thumb,pre:hover::-webkit-scrollbar-thumb,
+span:hover::-webkit-scrollbar-thumb,ul:hover::-webkit-scrollbar-thumb {
+  background-color: #b5b8b3
+}
+
+.one-line {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 80%;
+}
+
+.h-100cal {
+  height: 90%;
+  height: -webkit-calc(100% - 65px);
+  height: -moz-calc(100% - 65px);
+  height: calc(100% - 65px);
+}
+
+.loader-img {
+  position: fixed;
+  left: 50%;
+  top: 55%;
+  margin-left: -64px;
+  margin-top: -64px;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .5s;
+}
+
+/* .fade-leave-active below version 2.1.8 */
+.fade-enter,
+.fade-leave-to
+{
+  opacity: 0;
+}
+
+.date-range-tooltip .tooltip-inner {
+  max-width: 300px;
+}
+
+.w-5 {
+  width: 5%;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.dont-break-out {
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.frame-video {
+  /* max-width: 900px; */
+  aspect-ratio: 16/9;
+  display: block;
+  margin: 0 auto;
+  border: none;
+}
+
+@media only screen and (min-width: 676px) and (max-width: 767px)  {
+  .main-body { padding-top: 1.25rem!important; }
+}

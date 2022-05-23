@@ -1,0 +1,16 @@
+<transition name='fade'>
+  <div v-if='appLoaded'>
+    <nav-header></nav-header>
+    
+    <div class='container-fluid mt-20 pt-20 pt-md-5 main-body'>
+      <router-view />
+    </div>
+    
+    <modal-preview></modal-preview>
+    <modal-path></modal-path>
+    <modal-browse-folder></modal-browse-folder>
+    <modal-statistic-folder></modal-statistic-folder>
+
+    <toast-message></toast-message>
+  </div>
+</transition>
